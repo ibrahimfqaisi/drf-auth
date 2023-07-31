@@ -156,7 +156,7 @@ Content-Type: application/json
 ### Delete Snacks
 
 HTTP Method: DELETE
-Route: http://127.0.0.1:8000/api/v2/snacks/1
+Route: /api/v2/snacks/{id}
 Token Required: Yes
 Example Request (using ThunderClient):
 ```
