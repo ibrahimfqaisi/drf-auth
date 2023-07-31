@@ -26,6 +26,7 @@ to run the app:
 ```
 
 POST http://127.0.0.1:8000/api/token/
+
 Content-Type: application/json
 
 {
@@ -70,15 +71,19 @@ Authorization: Bearer YOUR_REFRESH_TOKEN
 ### CRUD Routes for Snacks
 Token Required: 
 - read : no
-creat , update , delet : yes
+
+- creat , update , delet : yes
 
 * api/v2/snacks/
 
 ### Create Snacks
 
 HTTP Method: POST
+
 Route: api/v2/snacks/
+
 Token Required: Yes
+
 Example Request (using ThunderClient):
 
 
@@ -106,9 +111,13 @@ Content-Type: application/json
 
 ### Read Snacks
 HTTP Method: GET
+
 Route: /api/v2/snacks/{id}
+
 Token Required: no
+
 Example Request (using ThunderClient):
+
 ```
 GET http://127.0.0.1:8000/api/v2/snacks/1
 
@@ -127,9 +136,13 @@ GET http://127.0.0.1:8000/api/v2/snacks/1
 ### Update Snacks
 
 HTTP Method: PUT
+
 Route: /api/v2/snacks/{id}
+
 Token Required: Yes
+
 Example Request (using ThunderClient):
+
 
 ```
 PATHCH http://127.0.0.1:8000/api/v2/snacks/1
@@ -156,9 +169,13 @@ Content-Type: application/json
 ### Delete Snacks
 
 HTTP Method: DELETE
+
 Route: /api/v2/snacks/{id}
+
 Token Required: Yes
+
 Example Request (using ThunderClient):
+
 ```
 DELETE http://127.0.0.1:8000/api/v2/snacks/1
 Authorization: Bearer YOUR_ACCESS_TOKEN
